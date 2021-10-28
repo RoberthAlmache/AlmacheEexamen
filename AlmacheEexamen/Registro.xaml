@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlmacheEexamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="DarkCyan" Padding="10" CornerRadius="0">
+                <Label Text="Ventana Registro" HorizontalTextAlignment="Center" TextColor="White" FontSize="18"/>
+            </Frame>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario Conectado:" HorizontalTextAlignment="Center" TextColor="Firebrick" />
+                <Label Text="Usuario Conectado:" x:Name="lblUsuario" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="1" TextColor="Firebrick"  />
+
+                <Label Text="Nombre Estudiante" Grid.Row="1" Grid.Column="0" />
+                <Entry x:Name="txtNEst" Keyboard="Text" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Monto Inicial:" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtMIni" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+
+                <Label Text="Cuota 1 + 5%:" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtCuota1" Keyboard="Numeric" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" IsEnabled="False"/>
+
+                <Label Text="Cuota 2 + 5%:" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtCuota2" Keyboard="Numeric" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" IsEnabled="False"/>
+
+                <Label Text="Cuota 3 + 5%:" Grid.Row="5" Grid.Column="0"/>
+                <Entry x:Name="txtCuota3" Keyboard="Numeric" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center" IsEnabled="False"/>
+
+                <Label Text="Total a pagar con intereses:" Grid.Row="6" Grid.Column="0"/>
+                <Entry x:Name="txtTotPag" Keyboard="Numeric" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" IsEnabled="False"/>
+                
+                <Button x:Name="btnCuotas" Text="Calcular" Clicked="btnCuotas_Clicked" Grid.Row="7" Grid.Column="0" HorizontalOptions="CenterAndExpand"/>
+                <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" Grid.Row="7" Grid.Column="1" HorizontalOptions="CenterAndExpand"/>
+
+            </Grid>
+
+
+                      <Label Text="© Derechos Reservados 2021 Roberth Almache" HorizontalTextAlignment="Center" TextColor="ForestGreen"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
