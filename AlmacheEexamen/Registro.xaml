@@ -50,7 +50,7 @@
             </Grid>
 
 
-                      <Label Text="© Derechos Reservados 2021 Roberth Almache" HorizontalTextAlignment="Center" TextColor="ForestGreen"/>
+                      
 
         </StackLayout>
     </ContentPage.Content>
